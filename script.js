@@ -1,17 +1,32 @@
-const pokemonList = document.getElementById('pokemon-list');
+const pokemonList = document.getElementById("pokemon-list");
+const loadPokemons = document.querySelectorAll;
 
-fetch('https://pokeapi.co/api/v2/pokemon/1/')
-  .then(res => res.json())
-  .then(data => { 
-    const pokemonCard = document.querySelector('.pokemon-card');
-    pokemonCard.querySelector('.pokemon-id').textContent = `#${data.id}`;
-    pokemonCard.querySelector('.pokemon-name').textContent = data.name;
-    const typesContainer = pokemonCard.querySelector('.types-container');
-    data.types.forEach(typeInfo => {
-      const typeBadge = document.createElement('span');
-      typeBadge.classList.add('type-badge');
-      typeBadge.textContent = typeInfo.type.name;
-      typesContainer.appendChild(typeBadge);
+fetch("https://pokeapi.co/api/v2/pokemon?limit=151&offset=0")
+  .then((res) => res.json())
+  .then((data) => {
+
+    const pokemons = data.results;
+    pokemons.forEach((pokemon) => {
+      const pokemonCard = document.createElement("div")
+      pokemonCard.className = "pokemon-card"
+      const h2 = document.createElement("h2")
+      h2.className = "pokemon-name"
+      h2.textContent = pokemon.name
+      pokemonCard.appendChild(h2)
+      const main = document.querySelector("main")
+      main.appendChild(pokemonCard)
+
+
+    
     });
-  })
-  .catch(err => console.error("Capture du pokémon impossible", err));
+  });
+
+  /*fetch("https://pokeapi.co/api/v2/ability/battle-armor")
+    .then((res)=> res.json())
+    .then((data)) => {
+
+      const abilities =data.results;
+
+      abilities.forEach((ability))
+    }
+      */
