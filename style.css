@@ -1,8 +1,9 @@
 @font-face {
   font-family: 'Univers';
   src: url('fonts/Univers-45-Light.woff2') format('woff2'),
-       url('fonts/Univers-45-Light.woff') format('woff');
-  font-weight: 300; /* Light */
+    url('fonts/Univers-45-Light.woff') format('woff');
+  font-weight: 300;
+  /* Light */
   font-style: normal;
   font-display: swap;
 }
@@ -10,8 +11,9 @@
 @font-face {
   font-family: 'Univers';
   src: url('fonts/Univers-55-Plain.woff2') format('woff2'),
-       url('fonts/Univers-55-Plain.woff') format('woff');
-  font-weight: 400; /* Regular */
+    url('fonts/Univers-55-Plain.woff') format('woff');
+  font-weight: 400;
+  /* Regular */
   font-style: normal;
   font-display: swap;
 }
@@ -19,13 +21,32 @@
 @font-face {
   font-family: 'Univers';
   src: url('fonts/Univers-65-Bold.woff2') format('woff2'),
-       url('fonts/Univers-65-Bold.woff') format('woff');
-  font-weight: 700; /* Bold */
+    url('fonts/Univers-65-Bold.woff') format('woff');
+  font-weight: 700;
+  /* Bold */
   font-style: normal;
   font-display: swap;
 }
 
-/* Utilisation */
+h1 {
+  font-size: 3em;
+  color: #313131;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: underline #313131;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #313131;
+  color: #FFFFFF;
+  padding: 20px;
+
+}
+
 body {
   font-family: 'Univers', sans-serif;
+  background-color: #FFFFFF;
 }
