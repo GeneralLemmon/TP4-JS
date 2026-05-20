@@ -1,52 +1,54 @@
 @font-face {
   font-family: 'Univers';
-  src: url('fonts/Univers-45-Light.woff2') format('woff2'),
-    url('fonts/Univers-45-Light.woff') format('woff');
-  font-weight: 300;
-  /* Light */
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Univers';
-  src: url('fonts/Univers-55-Plain.woff2') format('woff2'),
-    url('fonts/Univers-55-Plain.woff') format('woff');
-  font-weight: 400;
-  /* Regular */
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Univers';
-  src: url('fonts/Univers-65-Bold.woff2') format('woff2'),
-    url('fonts/Univers-65-Bold.woff') format('woff');
-  font-weight: 700;
-  /* Bold */
-  font-style: normal;
-  font-display: swap;
-}
-
-h1 {
-  font-size: 3em;
-  color: #313131;
-  text-align: center;
-  margin-top: 20px;
-  text-decoration: underline #313131;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #313131;
-  color: #FFFFFF;
-  padding: 20px;
+  src: url(assets/univers_freefontdownload_org/univers/univers.ttf) format('ttf');
 
 }
-
 body {
-  font-family: 'Univers', sans-serif;
-  background-color: #FFFFFF;
+    font-family: 'Univers', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+}
+
+.pokedex-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.pokemon-card {
+    border: 1px solid #000000;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    background: #c1c0c0;
+}
+
+.pokemon-img {
+    width: 80px;
+    height: 80px;
+}
+
+.type-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: white;
+    margin-top: 5px;
 }
