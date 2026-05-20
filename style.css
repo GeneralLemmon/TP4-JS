@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Univers';
+  src: url('fonts/Univers-45-Light.woff2') format('woff2'),
+       url('fonts/Univers-45-Light.woff') format('woff');
+  font-weight: 300; /* Light */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url('fonts/Univers-55-Plain.woff2') format('woff2'),
+       url('fonts/Univers-55-Plain.woff') format('woff');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url('fonts/Univers-65-Bold.woff2') format('woff2'),
+       url('fonts/Univers-65-Bold.woff') format('woff');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Utilisation */
+body {
+  font-family: 'Univers', sans-serif;
+}
